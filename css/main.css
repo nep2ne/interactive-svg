@@ -1,0 +1,35 @@
+#eyes {
+  transform: translateX(0);
+  animation: eye-shift 3s ease infinite alternate;
+}
+
+@keyframes eye-shift {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+#ears {
+  transform: translateY(0);
+  transition: all 200ms linear;
+}
+
+#bear-face:hover #ears {
+  transform: translateY(-15px);
+}
